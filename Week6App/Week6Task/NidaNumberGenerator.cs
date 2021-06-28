@@ -15,14 +15,14 @@ namespace NidaCloneApp
             //generate a random string of 9 characters
             #endregion
 
-            var userNo = new StringBuilder(9);
+            string id = string.Empty;
             Random random = new Random();
+
             for (int i = 0; i < 9; i++) {
-                //userNo += ((char)(random.Next(1, 26) + 64)).ToString().ToLower();
-                userNo.Append((char)(random.Next(1, 26) + 64));
+                id += random.Next(0, 9);
             }
 
-            return userNo.ToString().ToLower();
+            return id;
         }
     }
 }

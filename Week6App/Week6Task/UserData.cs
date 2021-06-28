@@ -9,7 +9,7 @@ namespace WK6SESSAPP
     {
         private int USRID = 0;
 
-        private int UserLimit = 5;
+        private int UserLimit = 1;
 
         public int USERID { get { return USRID++; } set { USRID = value ; } }
 
